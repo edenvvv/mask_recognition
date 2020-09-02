@@ -27,12 +27,12 @@ INIT_LR = 1e-4
 EPOCHS = 20
 BS = 32
 
-DIRECTORY = r"/Users/user/Desktop/projects/Python/TensorFlow/mask_recognition/dataset"
+DIRECTORY = r"dataset"
 CATEGORIES = ["with_mask", "without_mask"]
 
 # grab the list of images in our dataset directory, then initialize
 # the list of data (i.e., images) and class images
-print("[INFO] loading images...")
+print("loading images...")
 
 data = []
 labels = []

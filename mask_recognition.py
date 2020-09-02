@@ -77,7 +77,7 @@ faceNet = cv2.dnn.readNet(prototxtPath, weightsPath)
 maskNet = load_model("mask_detector.model")
 
 # initialize the video stream
-print("[INFO] starting video stream...")
+print("starting video stream...")
 vs = VideoStream(src=0).start()
 
 # loop over the frames from the video stream
@@ -115,7 +115,7 @@ while True:
     key = cv2.waitKey(1) & 0xFF
 
     # if the `q` key was pressed, break from the loop
-    if key == ord("q"):
+    if key == ord("q") or key == ord("e") or key == ord("Q") or key == ord("E"):
         break
 
 # do a bit of cleanup
