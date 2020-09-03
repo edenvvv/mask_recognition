@@ -17,7 +17,7 @@ def detect_and_predict_mask(frame, faceNet, maskNet):
     # pass the blob through the network and obtain the face detections
     faceNet.setInput(blob)
     detections = faceNet.forward()
-    print(detections.shape)
+    #print(detections.shape)
 
     # initialize our list of faces, their corresponding locations,
     # and the list of predictions from our face mask network
@@ -119,5 +119,6 @@ while True:
         break
 
 # do a bit of cleanup
+print("Finish")
 cv2.destroyAllWindows()
 vs.stop()
